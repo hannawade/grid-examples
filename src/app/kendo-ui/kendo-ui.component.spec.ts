@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GridjsComponent } from './gridjs.component';
+import { KendoUiComponent } from './kendo-ui.component';
 
-describe('GridjsComponent', () => {
-  let component: GridjsComponent;
-  let fixture: ComponentFixture<GridjsComponent>;
+describe('KendoUiComponent', () => {
+  let component: KendoUiComponent;
+  let fixture: ComponentFixture<KendoUiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GridjsComponent ]
+      declarations: [ KendoUiComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GridjsComponent);
+    fixture = TestBed.createComponent(KendoUiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

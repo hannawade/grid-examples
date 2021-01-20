@@ -8,7 +8,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MaterialTableComponent } from './material-table/material-table.component';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { Ng2SmartTableComponent } from './ng2-smart-table/ng2-smart-table.component';
-import { GridjsComponent } from './gridjs/gridjs.component';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { KendoUiComponent } from './kendo-ui/kendo-ui.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { GridjsComponent } from './gridjs/gridjs.component';
     NgxDatatableComponent,
     MaterialTableComponent,
     Ng2SmartTableComponent,
-    GridjsComponent,
+    KendoUiComponent,
   ],
   imports: [
     BrowserModule,
     NgxDatatableModule,
     MatTableModule,
     Ng2SmartTableModule,
+    GridModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
